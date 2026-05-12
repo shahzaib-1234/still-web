@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — STILL.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">STILL.</a>
+      <nav class="nav">
+        <a href="index.html">Shop</a>
+        <a href="#">Journal</a>
+        <a href="cart.html" class="cart-link">
+          Cart <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <nav class="breadcrumb">
+      <a href="index.html">Shop</a> &nbsp;/&nbsp;
+      <span data-product-name>Product</span>
+    </nav>
+
+    <section class="product-detail" data-product-id="">
+      <div class="gallery">
+        <img src="https://picsum.photos/seed/mug/800/800"
+             alt="Product image"
+             data-product-image />
+      </div>
+
+      <div class="info">
+        <h1 data-product-name>Stoneware Mug</h1>
+        <div class="price-large">
+          $<span data-product-price>28.00</span>
+        </div>
+
+        <p class="description" data-product-description>
+          Hand-thrown by a small studio in Lisbon. Each piece carries the
+          subtle marks of its maker — slight variations in glaze and form
+          are intentional.
+        </p>
+
+        <div class="qty-row">
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" class="qty-input"
+                 value="1" min="1" max="99" data-qty-input />
+        </div>
+
+        <button class="btn btn-accent btn-block add-to-cart">
+          Add to cart
+        </button>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">© STILL. — A starter exercise template.</div>
+  </footer>
+  
+  <!-- TODO (exercise): include your cart.js here -->
+  <script src="./cart.js">
+    
+
+  </script>
+ 
+ 
+</body>
+</html>
