@@ -256,6 +256,7 @@ function updateCartSummary() {
   shippingEl.innerText = shipping.toFixed(2);
   totalEl.innerText = total.toFixed(2);
   }
+  
 }
 updateCartSummary();
 
